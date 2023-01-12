@@ -1,2 +1,2 @@
 # SQL
-Sql exanples
+Sql examples
