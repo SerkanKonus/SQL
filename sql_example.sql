@@ -52,3 +52,13 @@ SELECT COUNT(*) FROM country WHERE country LIKE '_____';
 
 -- Example 5
 SELECT COUNT(*) FROM city WHERE city ILIKE '%r';
+
+-- HomeWork 5
+-- Example 1
+SELECT * FROM film WHERE title LIMIT '%n' ORDER BY length DESC LIMIT 5;
+
+-- Example 2
+SELECT * FROM film WHERE title LIMIT '%n' ORDER BY length ASC OFFSET 5 LIMIT 5;
+
+--Example 3
+SELECT * FROM customer WHERE store_id = 1 ORDER BY last_name DESC LIMIT 4;
