@@ -63,7 +63,8 @@ insert into employee (name, birthday, email) values ('Faun Anten', '2003-11-24',
 -- Example 3
 
 UPDATE employee
-SET name = 'Sekran Konuş'
+SET name = 'Sekran Konuş',
+    birthday = '1990-06-16'
 WHERE id = 1;
 RETURNING *;
 
