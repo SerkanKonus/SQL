@@ -88,3 +88,6 @@ SELECT store_id, COUNT(*) FROM customer GROUP BY store_id;
 
 -- Example 4
 SELECT country_id, COUNT(*) FROM city GROUP BY country_id ORDER BY COUNT(*) DESC LIMIT 1;
+
+-- ROUND(sayı, virgülden sonraki basamak sayısı)
+-- CONCAT -> iki sütun verisini yan yana birleştirir. CONCAT(name, ' ', last_name)
