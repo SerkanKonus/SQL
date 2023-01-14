@@ -60,18 +60,31 @@ SELECT * FROM film WHERE title LIMIT '%n' ORDER BY length DESC LIMIT 5;
 -- Example 2
 SELECT * FROM film WHERE title LIMIT '%n' ORDER BY length ASC OFFSET 5 LIMIT 5;
 
---Example 3
+-- Example 3
 SELECT * FROM customer WHERE store_id = 1 ORDER BY last_name DESC LIMIT 4;
 
 -- HomeWork 6
 -- Example 1
 SELECT AVG(rental_rate) FROM film;
 
---Example 2
+-- Example 2
 SELECT COUNT(*) FROM film WHERE title LIKE 'C%';
 
---Example 3
+-- Example 3
 SELECT MAX(length) FROM film WHERE rental_rate = 0.99;
 
---Example 4
+-- Example 4
 SELECT COUNT(DISTINCT replacement_cost) FROM film WHERE length > 150;
+
+-- HomeWork 7
+-- Example 1
+SELECT rating FROM film GROUP BY rating;
+
+-- Example 2
+SELECT replacement_cost, COUNT(*) FROM film GROUP BY replacement_cost HAVING COUNT(*) > 50;
+
+-- Example 3
+SELECT store_id, COUNT(*) FROM customer GROUP BY store_id;
+
+-- Example 4
+SELECT country_id, COUNT(*) FROM city GROUP BY country_id ORDER BY COUNT(*) DESC LIMIT 1;
