@@ -8,7 +8,7 @@ CREATE TABLE employee (
     email VARCHAR(100)
 )
 
--- Example 2
+-- Example 2 https://www.mockaroo.com/
 insert into employee (name, birthday, email) values ('Klaus McLarnon', '1981-07-08', 'kmclarnon0@ucla.edu');
 insert into employee (name, birthday, email) values ('Wendel Spanswick', '1985-11-15', 'wspanswick1@about.me');
 insert into employee (name, birthday, email) values ('Maren McNeachtain', '2001-09-04', 'mmcneachtain2@sphinn.com');
